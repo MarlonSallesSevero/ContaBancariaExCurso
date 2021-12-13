@@ -25,7 +25,7 @@ namespace ContaBancaria
                 Console.WriteLine("Informe o valor a depositar");
                 vl = double.Parse(Console.ReadLine());
                 a.Deposito(vl);
-                Console.WriteLine($"{a.Nconta}:{a.Nome}:{a.Saldo}");
+                Console.WriteLine($"{a.Nconta}:{a.Nome}:{a.Saldo}\n*------------------------------*");
             }
             else if (contr == 2)
             {
@@ -37,8 +37,6 @@ namespace ContaBancaria
                 Console.WriteLine("Operacao Invalida!!");
                 Console.WriteLine($"{a.Nconta}:{a.Nome}:{a.Saldo}\n*------------------------------*");
             }
-
-            Console.WriteLine("*------------------------------*");
             while (opera != 2) {
                 Console.WriteLine("Informe uma operacao:");
                 Console.WriteLine("1-DEPOSITO\n2-SAQUE");
