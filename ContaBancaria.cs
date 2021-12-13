@@ -8,12 +8,12 @@ namespace ContaBancaria
         public double Saldo { get; private set; }
         public double Deposito(double valor) // Metodo
         {
-            Saldo = valor + Saldo;
+            Saldo += valor;
             return Saldo;
         }
         public double Saque(double valor) // Metodo
         {
-            Saldo = (Saldo - valor) - 5;
+            Saldo -= valor - 5;
             return Saldo;
         }
         public ContaBancaria(int nconta, string nome) // Contrutor
